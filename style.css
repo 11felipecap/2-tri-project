@@ -14,7 +14,7 @@ body {
 }
 
 .clock {
-    background-color: #ffcc00;
+    background-color: #000000;
     padding: 20px 40px;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -62,13 +62,13 @@ body {
 }
 
 #hours {
-    color: #ff0000;
+    color: #fff;
 }
 
 #minutes {
-    color: #00cc00;
+    color: #fff;
 }
 
 #seconds {
-    color: #0066cc;
+    color: #fff;
 }
