@@ -1,74 +1,61 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+:root {
+    --cor-de-fundo: #1E1E1E;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A375E;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff;
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+.conteudo-principal {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.clock {
-    background-color: #000000;
-    padding: 20px 40px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    display: inline-block;
-    transform: scale(1);
-    animation: bounce 0.6s ease-in-out infinite;
+.titulo-principal {
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
 }
 
-@keyframes bounce {
-    0% {
-        transform: scale(1);
-    }
-    25% {
-        transform: scale(1.1);
-    }
-    50% {
-        transform: scale(1);
-    }
-    75% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+.titulo-principal span {
+    color: var(--verde);
 }
 
-.time {
-    font-size: 60px;
-    font-weight: bold;
-    color: #333;
-    letter-spacing: 5px;
+.botao {
+    font-family: "Chakra Petch", sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
 }
 
-.time span {
-    display: inline-block;
-    transition: transform 0.2s ease;
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
 }
 
-#hours, #minutes, #seconds {
-    font-family: 'Courier New', Courier, monospace;
-    color: #222;
-    font-size: 80px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-#hours {
-    color: #fff;
-}
-
-#minutes {
-    color: #fff;
-}
-
-#seconds {
-    color: #fff;
+.botoes {
+    display: block;
 }
