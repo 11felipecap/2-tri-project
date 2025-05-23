@@ -59,3 +59,12 @@ body {
 .botoes {
     display: block;
 }
+
+@media screen and (mid-width:768px){
+    .botoes{
+        display: flex;
+    }
+    .botao:first-child{
+        border-radius: 40pxz 0 0 0;
+    }
+}
