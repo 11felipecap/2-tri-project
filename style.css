@@ -2,10 +2,10 @@
 
 :root {
     --cor-de-fundo: #1E1E1E;
-    --verde: #6FFF57;
+    --verde: #c30b36;
     --branco: #FFFFFF;
-    --botao-ativo: #3A375E;
-    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --botao-ativo: #5e5237;
+    --botao-inativo: rgba(220, 244, 39, 0.5);
     --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 
@@ -63,6 +63,7 @@ body {
 .ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
+
 }
 
 @media screen and (mid-width:768px){
@@ -72,7 +73,5 @@ body {
     .botao:first-child{
         border-radius: 40px 0 0 0;
     }
-    .botao:last-child{
-        border-radius: 0 40px 0 0;
-    }
+    
 }
